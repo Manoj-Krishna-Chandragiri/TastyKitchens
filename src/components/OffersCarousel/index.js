@@ -90,7 +90,7 @@ class OffersCarousel extends Component {
   }
 
   renderLoader = () => (
-    <div className="carousel-loader">
+    <div className="carousel-loader" data-testid="restaurants-offers-loader">
       <Loader type="Oval" color="#F7931E" width="100%" height="100%" />
     </div>
   )

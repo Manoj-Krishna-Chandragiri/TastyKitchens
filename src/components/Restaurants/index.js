@@ -81,7 +81,7 @@ class Restaurants extends Component {
   }
 
   renderLoader = () => (
-    <div className="restaurants-loader">
+    <div className="restaurants-loader" data-testid="restaurants-list-loader">
       <Loader type="Oval" color="#F7931E" width="100%" height="100%" />
     </div>
   )
@@ -117,18 +117,20 @@ class Restaurants extends Component {
           <button
             type="button"
             className="page-button"
+            data-testid="pagination-left-button"
             onClick={this.paginationDecrement}
           >
             <IoIosArrowBack />
           </button>
 
-          <p className="page-number">
+          <p className="page-number" data-testid="active-page-number">
             <span>{activePage}</span> of 4
           </p>
 
           <button
             type="button"
             className="page-button"
+            data-testid="pagination-right-button"
             onClick={this.paginationIncrement}
           >
             <IoIosArrowForward />
