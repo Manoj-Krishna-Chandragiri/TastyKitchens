@@ -1,0 +1,21 @@
+.cart-quantity-container {
+  display: flex;
+  align-items: center;
+}
+.food-quantity {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #475569;
+}
+.quantity-button {
+  border: 0.75px solid #475569;
+  color: #475569;
+  width: 18px;
+  height: 18px;
+  outline: none;
+  cursor: pointer;
+}
